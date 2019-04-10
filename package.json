@@ -6,7 +6,7 @@
   "author": "chenlupeng <972876725@qq.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

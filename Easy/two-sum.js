@@ -1,9 +1,8 @@
-const twoSum = function (nums, target) {
-  let cache = new Map();
+const twoSum = function(nums, target) {
+  let cache = {};
   for (let i = 0; i < nums.length; i++) {
-    let remainer = target - nums[i];
-    if (cache.get(remainer) > -1) return [cache.get(remainer), i]
-    cache.set(nums[i], i)
+    if (cache[target - nums[i]] > -1) return [cache[target - nums[i]], i];
+    cache[nums[i]] = i;
   }
 };
 
